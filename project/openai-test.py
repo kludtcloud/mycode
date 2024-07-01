@@ -1,16 +1,30 @@
-import os
+#env Python3, openai and dotenv
 import openai
+#import env and .env file
+from dotenv import load_dotenv
+import os
+load_dotenv()
 
+#call input from user: then yuse that for OpenAI message.
+user_input = input("What are you looking for?" '\n')
+user_prompt = "Here:"
 from openai import OpenAI
-open.api_key = os.getenv('OPENAI_API_KEY')
+api_key = os.getenv('OPEN_API_KEY')
+
 client = OpenAI()
 
-completion = client.chat.completions.create(
-  model="gpt-3.5-turbo",
-  messages=[
-    {"role": "system", "content": "You are a poetic assistant, skilled in explaining complex programming concepts with creative flair."},
-    {"role": "user", "content": "Compose a poem that explains the concept of recursion in programming."}
-  ]
-)
+def get_response(prompt, top_p=1.0):
+    response = client.chat.completions.create(
+      model="gpt-3.5-turbo",
+      messages=[
+      {"role": "system", "content": user_prompt},
+      {"role": "user", "content": user_input}
+      ]
+  )
+    return response['choices'][0]['message']['content']
 
-print(completion.choices[0].message)
+print(get_response(user_input))
+
+#dwarves = completion.choices[0].message
+
+#print(f"Your request {dwarves}, are silly.")
