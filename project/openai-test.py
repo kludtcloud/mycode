@@ -13,17 +13,17 @@ api_key = os.getenv('OPEN_API_KEY')
 
 client = OpenAI()
 
-def get_response(prompt, top_p=1.0):
-    response = client.chat.completions.create(
-      model="gpt-3.5-turbo",
-      messages=[
-      {"role": "system", "content": user_prompt},
-      {"role": "user", "content": user_input}
-      ]
-  )
-    return response['choices'][0]['message']['content']
+def response():
+  completion = client.chat.completions.create(
+  model="gpt-3.5-turbo",
+  messages=[
+    {"role": "system", "content": user_prompt},
+    {"role": "user", "content": user_input}
+  ]
+)
+  return completion
 
-print(get_response(user_input))
+print(message)
 
 #dwarves = completion.choices[0].message
 
