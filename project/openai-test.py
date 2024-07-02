@@ -9,7 +9,7 @@ load_dotenv()
 user_input = input("What are you looking for?" '\n')
 user_prompt = "Here:"
 from openai import OpenAI
-api_key = os.getenv('OPEN_API_KEY')
+api_key = os.getenv('OPENAI_API_KEY')
 
 client = OpenAI()
 
@@ -21,9 +21,10 @@ def response():
     {"role": "user", "content": user_input}
   ]
 )
-  return completion
 
-print(message)
+
+
+print(completion.choices[0].message)
 
 #dwarves = completion.choices[0].message
 
