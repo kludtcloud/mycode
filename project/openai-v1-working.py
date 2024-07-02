@@ -19,7 +19,7 @@ if not api_key:
 user_input = input("What are you looking for?\n")
 
 # Define a system prompt (optional)
-user_prompt = "Here:"
+user_prompt = "output reduced to just the values requested"
 
 try:
     # Create the OpenAI client and request completion
@@ -36,13 +36,14 @@ try:
     formatted_message = message.strip()
 
     # Print the formatted message
-    print("Formatted Response:")
+    #print("Formatted Response:")
     print(formatted_message)
+  
 
 except Exception as e:
     print(f"An error occurred: {e}")
 
+with open("output.txt") as f:
+    print(formatted_message, file=f)
 
-
-#i want to call ansible playbook based off openai calls
-    #def main()
+#I want to now define values based off the AI call and then create a main() loop to do stuff
