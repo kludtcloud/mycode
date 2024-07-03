@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from openai import OpenAI
 from dotenv import load_dotenv
-import os 
+import o 
 import sys
 
 # Load environment variables from .env file
