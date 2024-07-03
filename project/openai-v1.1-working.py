@@ -20,7 +20,7 @@ if not api_key:
 user_input = input("What are you looking for?\n")
 
 # Define a system prompt (optional)
-user_prompt = "return list only, seperated by commas"
+user_prompt = "return list only starting with numbers, seperated by commas"
 
 try:
     # Create the OpenAI client and request completion
@@ -36,20 +36,23 @@ try:
     # Format the message
     formatted_message = message.strip()
 
-    # Print the formatted message
-    #print("Formatted Response:")
-    #thprint(formatted_message)
-  
-
+ 
 except Exception as e:
     print(f"An error occurred: {e}")
 
-#i need to strip the numbers and commons out of the list for  formatting up above
 
-key_list = []
+#end of OpenAI call
+
+
+
+#This crates a list from the returned OPEN AI message
+
+"""#I may create a dictionary instead of a list
+#I need to strip the numbers and commons out of the list for  formatting up above"""
+
+key_list = {}
 key_list = formatted_message.split()
 key_list = [item for item in key_list if item]
-
 print(key_list)
 
 
@@ -78,9 +81,12 @@ print(crypto_list)"""
             continue"""
 
 
-#create a dictionary and assign the definitions into each value from GPT prompt
+
+#select a key from dictonary and then display the defintions this is broken still
 
 selected_key = input(f"Select and item and display defintion: '\n' {key_list}" '\n')
 
-selected_key = key_list[1] #not sure how to call the list items yet, this only chooses positon one
-print(f'{selected_key}')
+print_def = key_list[0].get(selected_key)
+#print_key = key_list[selected_key] 
+#not sure how to call the list items yet, this only chooses positon one
+print(f'{print_def}')
