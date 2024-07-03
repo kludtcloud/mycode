@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 from openai import OpenAI
 from dotenv import load_dotenv
-import os
+import os 
+import sys
 
 # Load environment variables from .env file
 load_dotenv()
@@ -43,7 +44,8 @@ try:
 except Exception as e:
     print(f"An error occurred: {e}")
 
-with open("output.txt") as f:
-    print(formatted_message, file=f)
+sys.stdout = open('output.txt', 'wt', 'a')
+print(formatted_message)
 
-#I want to now define values based off the AI call and then create a main() loop to do stuff
+#I want to now define values based off the AI call and then create a 
+# main() loop to do stuff
