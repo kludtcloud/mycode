@@ -62,8 +62,8 @@ print(key_list)
 
 
 #this outputs to a file 'output.txt' that not functioning yet, i think i need echo?
-"""sys.stdout = open('output.txt', 'wt')
-print(crypto_list)"""
+sys.stdout = open('output.txt', 'wt')
+print(key_list)
 
 #I want to now define values based off the AI call and then create a 
 # main() loop to do stuff, not sure what yet.... but atleast i have valuves in a list
