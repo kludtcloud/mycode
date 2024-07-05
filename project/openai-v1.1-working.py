@@ -92,6 +92,7 @@ def main():
             else:
                 define_key = key_list
                 define_ask = input(f"Pick a key{define_key}" '\n')
+                #call a function? from here? to use LLM to define the picked key?
             continue
 
         if user_input != ['reset', 'exit', 'yes', 'define']:
