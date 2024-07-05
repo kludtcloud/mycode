@@ -26,7 +26,7 @@ print(f"Welcome to the show, a few functional and purpose notes:" '\n'
 
 def main():
     while True:
-        user_input = input("At any time you may reset the program at this prompt by typing 'reset' or 'exit' to quit Yes to contuine: ").strip().lower()
+        user_input = input("At any time you may reset the program at this prompt" '\n' "'reset' to" '\n' "'exit' to quit" '\n' "'yes' to contuine" '\n').strip().lower()
         
         if user_input == "reset":
             print("Resetting the program...")
@@ -59,14 +59,20 @@ def openAIcall(prompt, user_input2):
 
             # Format the message
             formatted_message = message.strip()
-            key_list = formatted_message.split()  # Split into words (need to figure out how to split it into )
-            key_list = [item for item in key_list if item]  # Remove empty strings
+            reformat = '}{[],"'
+            for char in reformat:
+                formatted_message = formatted_message.replace(char, "")
             print(formatted_message)
-            #this outputs to a file 'output.txt' that not functioning yet, i think i need echo?
-            with open('output.txt', 'wt') as f:
+
+            key_list = message#.split('"')  # Split into words (need to figure out how to split it into )
+            key_list = [item for item in key_list if item]  # Remove empty strings
+
+            #this appends outputs to a file 'output.txt'
+            with open('output.txt', 'a') as f:
                 for item in key_list:
-                    f.write(f"{item}\n")
-            print(key_list)
+                    f.write(f"{item}")
+            print(f"Written {user_input2} to {f}")
+            # print(key_list)
            # print(f"You typed: {user_input2}")
 
     except Exception as e:
