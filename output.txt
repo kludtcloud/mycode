@@ -1,1 +1,73 @@
-Doc, Grumpy, Happy, Sleepy, Bashful, Sneezy, Dopey
+{
+  "players": [
+    {
+      "name": "Mike Trout",
+      "team": "Los Angeles Angels",
+      "position": "Outfielder"
+    },
+    {
+      "name": "Aaron Judge",
+      "team": "New York Yankees",
+      "position": "Outfielder"
+    },
+    {
+      "name": "Jacob deGrom",
+      "team": "New York Mets",
+      "position": "Pitcher"
+    },
+    {
+      "name": "Fernando Tatis Jr.",
+      "team": "San Diego Padres",
+      "position": "Shortstop"
+    },
+    {
+      "name": "Freddie Freeman",
+      "team": "Atlanta Braves",
+      "position": "First Baseman"
+    }
+  ]
+}{
+  "recipe": {
+    "name": "Classic Pancakes",
+    "ingredients": [
+      "1 1/2 cups all-purpose flour",
+      "3 1/2 teaspoons baking powder",
+      "1 teaspoon salt",
+      "1 tablespoon white sugar",
+      "1 1/4 cups milk",
+      "1 egg",
+      "3 tablespoons butter, melted"
+    ],
+    "instructions": [
+      "In a large bowl, sift together the flour, baking powder, salt and sugar.",
+      "Make a well in the center and pour in the milk, egg and melted butter; mix until smooth.",
+      "Heat a lightly oiled griddle or frying pan over medium-high heat.",
+      "Pour or scoop the batter onto the griddle, using approximately 1/4 cup for each pancake.",
+      "Cook until bubbles form on the surface, then flip and cook until browned on the other side.",
+      "Serve hot with your favorite toppings such as syrup, fruits, or whipped cream."
+    ]
+  }
+}{
+  "quotes": [
+    {
+      "quote": "It's just a flesh wound!",
+      "movie": "Monty Python and the Holy Grail"
+    },
+    {
+      "quote": "Ni!",
+      "movie": "Monty Python and the Holy Grail"
+    },
+    {
+      "quote": "Nobody expects the Spanish Inquisition!",
+      "movie": "Monty Python's Flying Circus"
+    },
+    {
+      "quote": "He's not the Messiah, he's a very naughty boy!",
+      "movie": "Life of Brian"
+    },
+    {
+      "quote": "What... is the air-speed velocity of an unladen swallow?",
+      "movie": "Monty Python and the Holy Grail"
+    }
+  ]
+}

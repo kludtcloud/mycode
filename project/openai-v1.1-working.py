@@ -27,24 +27,30 @@ print(f"Welcome to the show, a few functional and purpose notes:" '\n'
 def main():
     while True:
         user_input = input("At any time you may reset the program at this prompt" '\n' "'reset' to" '\n' "'exit' to quit" '\n' "'yes' to contuine" '\n').strip().lower()
-        
+        if user_input == "yes":
+            user_input2 = input("What are you looking for?\n")
+            openAIcall(user_prompt, user_input2)
+            continue
         if user_input == "reset":
             print("Resetting the program...")
             continue  # Restart the loop, effectively resetting the program
         
         if user_input == "exit":
             print("Exiting.")
-            break  # Exit the loop and end the program
+            reset_input = input("Do you want to exit the program? (yes/no): ").strip().lower()
+            if reset_input != "no":
+                    print("Exiting the program...")
+            #break  # Exit the outer loop and end the program
+        break  # Exit the loop and end the program
         
         # Proceed if not reset or exit
         #user_input2 = input("What are you looking for?\n")
         #user_prompt = "return list in JSON"
-        user_input2 = input("What are you looking for?\n")
-        openAIcall(user_prompt, user_input2)
+
 
 
 def openAIcall(prompt, user_input2):
-     # Assuming 'client' is already defined and set up for OpenAI API
+     # OpenAI API
     try:
             response = client.chat.completions.create(
                 model="gpt-3.5-turbo",
@@ -88,15 +94,9 @@ def openAIcall(prompt, user_input2):
 #I need to strip the numbers and commons out of the list for  formatting up above"""
 
 
-
-
 if __name__ == "__main__":
-    while True:
-        main()  # Run the main function
-        reset_input = input("Do you want to exit the program? (yes/no): ").strip().lower()
-        if reset_input != "no":
-            print("Exiting the program...")
-            break  # Exit the outer loop and end the program
+    main()  # Run the main function
+        
 
 
 
