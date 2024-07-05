@@ -70,4 +70,156 @@
       "movie": "Monty Python and the Holy Grail"
     }
   ]
+}Here is a simple recipe for a classic homemade pie:
+
+Ingredients:
+- 1 1/4 cups all-purpose flour
+- 1/2 teaspoon salt
+- 1/2 cup butter, chilled and diced
+- 1/4 cup ice water
+
+Instructions:
+1. In a large mixing bowl, combine the flour and salt.
+2. Add the diced butter to the flour mixture and use a pastry cutter or fork to cut the butter into the flour until the mixture resembles coarse crumbs.
+3. Slowly add the ice water to the flour mixture, stirring until the dough comes together.
+4. Form the dough into a ball, wrap it in plastic wrap, and refrigerate for at least 30 minutes.
+5. Preheat your oven to 375°F (190°C).
+6. Roll out the chilled dough on a floured surface to fit your pie dish.
+7. Place the rolled-out dough in the pie dish and trim any excess overhang.
+8. Fill the pie crust with your desired filling (such as fruit filling, custard, or savory filling).
+9. If making a double-crust pie, cover the filling with a second layer of rolled-out dough, seal the edges, and cut slits in the top crust for ventilation.
+10. Bake the pie in the preheated oven for about 45-50 minutes or until the crust is golden brown and the filling is bubbly.
+11. Allow the pie to cool before serving.
+
+Enjoy your delicious homemade pie![
+  { "name": "Connor McDavid", "position": "Center", "team": "Edmonton Oilers" },
+  { "name": "Alex Ovechkin", "position": "Left Wing", "team": "Washington Capitals" },
+  { "name": "Auston Matthews", "position": "Center", "team": "Toronto Maple Leafs" },
+  { "name": "Nathan MacKinnon", "position": "Center", "team": "Colorado Avalanche" },
+  { "name": "Victor Hedman", "position": "Defense", "team": "Tampa Bay Lightning" }
+][
+  "John",
+  "Michael",
+  "Emily",
+  "Sarah"
+]{
+  "players": [
+    "Connor McDavid",
+    "Alex Ovechkin",
+    "Nathan MacKinnon",
+    "Sidney Crosby",
+    "Auston Matthews"
+  ]
+}{
+  bird_names: [
+    Sparrow,
+    Robin,
+    Blue Jay,
+    Cardinal,
+    Hummingbird
+  ]
+}{
+  bird_names: [
+    Robin,
+    Blue Jay,
+    Cardinal,
+    Sparrow,
+    Finch
+  ]
+}{
+    players: [
+        Sidney Crosby,
+        Connor McDavid,
+        Alex Ovechkin,
+        Nathan MacKinnon,
+        Leon Draisaitl
+    ]
+}[
+    Sidney Crosby,
+    Alexander Ovechkin,
+    Connor McDavid,
+    Nathan MacKinnon,
+    Auston Matthews
+]1. Sidney Crosby
+2. Alex Ovechkin
+3. Connor McDavid
+4. Patrick Kane
+5. Auston Matthews{
+    players: [
+        Sidney Crosby,
+        Connor McDavid,
+        Alexander Ovechkin,
+        Nathan MacKinnon,
+        Patrick Kane
+    ]
+}{
+    players: [Wayne Gretzky, Mario Lemieux, Sidney Crosby, Connor McDavid, Alex Ovechkin]
+}{
+  players: [
+    Connor McDavid,
+    Sidney Crosby,
+    Alex Ovechkin,
+    Nathan MacKinnon,
+    Auston Matthews
+  ]
+}[
+  {
+    name: Lionel Messi,
+    team: Paris Saint-Germain,
+    position: Forward
+  },
+  {
+    name: Cristiano Ronaldo,
+    team: Manchester United,
+    position: Forward
+  },
+  {
+    name: Kevin De Bruyne,
+    team: Manchester City,
+    position: Midfielder
+  },
+  {
+    name: Virgil van Dijk,
+    team: Liverpool,
+    position: Defender
+  },
+  {
+    name: Robert Lewandowski,
+    team: Bayern Munich,
+    position: Forward
+  }
+]{
+    players: [
+        {
+            name: Sidney Crosby,
+            position: Center,
+            team: Pittsburgh Penguins
+        },
+        {
+            name: Connor McDavid,
+            position: Center,
+            team: Edmonton Oilers
+        },
+        {
+            name: Alex Ovechkin,
+            position: Left Wing,
+            team: Washington Capitals
+        },
+        {
+            name: Auston Matthews,
+            position: Center,
+            team: Toronto Maple Leafs
+        },
+        {
+            name: Nathan MacKinnon,
+            position: Center,
+            team: Colorado Avalanche
+        }
+    ]
+}{
+  names: [Emily, Jacob, Sophia, Mia, Ethan]
+}Thank you for using the tool. If you have any more questions in the future, feel free to ask! Goodbye!{
+  names: [Emily, Jacob, Sophia, Michael, Ava]
+}{
+  names: [Alice, Bob, Emily, David, Sophia]
 }
