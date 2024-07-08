@@ -1,0 +1,29 @@
+{
+  players: [
+    {
+      name: Mike Trout,
+      team: Los Angeles Angels,
+      position: Outfielder
+    },
+    {
+      name: Christian Yelich,
+      team: Milwaukee Brewers,
+      position: Outfielder
+    },
+    {
+      name: Gerrit Cole,
+      team: New York Yankees,
+      position: Pitcher
+    },
+    {
+      name: Fernando Tatis Jr.,
+      team: San Diego Padres,
+      position: Shortstop
+    },
+    {
+      name: Freddie Freeman,
+      team: Atlanta Braves,
+      position: First Baseman
+    }
+  ]
+}

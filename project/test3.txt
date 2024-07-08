@@ -1,0 +1,1 @@
+This JSON file defines an object with two key-value pairs. The key "breed" has a value of "Irish Setter" and the key "color" has a value of "Red".

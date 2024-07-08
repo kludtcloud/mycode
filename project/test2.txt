@@ -1,0 +1,4 @@
+{
+  breed: Irish Setter,
+  color: Red
+}

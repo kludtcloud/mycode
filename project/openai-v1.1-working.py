@@ -25,6 +25,7 @@ print(f"Welcome to the show, a few functional and purpose notes:" '\n'
  "2: These answers will output to a text file." '\n'
  "3: On exit the program and it will encrypt and hash your answers.(maybe? I dont know yet)" '\n')
 
+file_out = input(f"Specify file output name:" '\n')
 
 def openAIcall(prompt, user_input2):
      # OpenAI API
@@ -52,7 +53,7 @@ def openAIcall(prompt, user_input2):
             key_list = [item for item in key_list if item]  # Remove empty strings
 
             #this appends outputs to a file 'output.txt'
-            with open('./output.txt', 'a') as f:
+            with open(f'./{file_out}.txt', 'a') as f:
                 for item in key_list:
                     f.write(f"{item}")
             print(f"Written {user_input2} to {f}")
