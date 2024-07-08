@@ -1,0 +1,29 @@
+{
+  players: [
+    {
+      name: Virat Kohli,
+      team: India,
+      position: Batsman
+    },
+    {
+      name: Steve Smith,
+      team: Australia,
+      position: Batsman
+    },
+    {
+      name: Kane Williamson,
+      team: New Zealand,
+      position: Batsman
+    },
+    {
+      name: Ben Stokes,
+      team: England,
+      position: All-rounder
+    },
+    {
+      name: Rashid Khan,
+      team: Afghanistan,
+      position: Bowler
+    }
+  ]
+}

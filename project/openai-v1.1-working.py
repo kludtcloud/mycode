@@ -10,7 +10,7 @@ key_list = []
 # Get API key from environment variables
 api_key = os.getenv('OPENAI_API_KEY')
 client = OpenAI(api_key=api_key)
-user_prompt = "return list in JSON"
+user_prompt = "return as list in JSON"
 # Check if the API key is loaded
 if not api_key:
     raise ValueError("API key not found. Make sure you have an OPENAI_API_KEY in your .env file.")
@@ -53,7 +53,7 @@ def openAIcall(prompt, user_input2):
             key_list = [item for item in key_list if item]  # Remove empty strings
 
             #this appends outputs to a file 'output.txt'
-            with open(f'./{file_out}.txt', 'a') as f:
+            with open(f'./{file_out}', 'a') as f:
                 for item in key_list:
                     f.write(f"{item}")
             print(f"Written {user_input2} to {f}")

@@ -3,6 +3,8 @@ from openai import OpenAI
 from dotenv import load_dotenv
 import os
 
+#THIS PROGRAM TAKES INPUT FILE AND THEN OUTPUTS IT deifning each object
+
 #SETUP
 # Load environment variables from .env file
 load_dotenv()
@@ -10,7 +12,7 @@ load_dotenv()
 # Get API key from environment variables
 api_key = os.getenv('OPENAI_API_KEY')
 client = OpenAI(api_key=api_key)
-prompt = "Please define the follow JSON file"
+prompt = "Break down each JSON object, look up and give me detailed history on each object"
 # Check if the API key is loaded
 if not api_key:
     raise ValueError("API key not found. Make sure you have an OPENAI_API_KEY in your .env file.")
@@ -44,20 +46,26 @@ def openAIcall(prompt, file_content):
 #end of OpenAI call
 #This crates a list from the returned OPEN AI message
 
-#file_in = file_in.readlines()
 
 def main():
+    #define file in and out
     file_in = input(f"Specify file input name:" '\n')
     file_out = input(f"Specify file output name:" '\n')
 
     try:
+        #open both read and write files and define their object
         with open(file_in, 'r') as fileread, open(file_out, 'w') as filewrite:
             file_content = fileread.read()
-
+#call OpenAI with file content
             response = openAIcall(prompt, file_content.strip())
             if response:
+                #print response
                 print(f"{response}" '\n')
+                #write response to file
                 filewrite.write(response + '\n')
+
+
+                #ERRROR HANDLING
     except FileNotFoundError:
         print(f"File not found: {file_in}")
     except MessegeError as e:
