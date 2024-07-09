@@ -54,7 +54,7 @@ def main():
 
     try:
         #open both read and write files and define their object
-        with open(file_in, 'r') as fileread, open(file_out, 'w') as filewrite:
+        with open(file_in, 'r') as fileread, open(file_out, 'a') as filewrite:
             file_content = fileread.read()
 #call OpenAI with file content
             response = openAIcall(prompt, file_content.strip())

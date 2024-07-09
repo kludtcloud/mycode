@@ -59,7 +59,7 @@ def openAIcall(prompt, user_input2):
             print(f"Written {user_input2} to {f}")
             # print(key_list)
            # print(f"You typed: {user_input2}")
-            return key_list
+            return message
     except Exception as e:
         print(f"An error occured: {e}")
 
@@ -79,6 +79,8 @@ def main():
             continue
         if user_input == "reset":
             print("Resetting the program...")
+            with open(f'./{file_out}', 'w') as f:
+                    f.write(f"")
             continue  # Restart the loop, effectively resetting the program
         
         if user_input == "exit":
@@ -87,14 +89,14 @@ def main():
             if reset_input != "no":
                     print("Exiting the program...")
             break
-        if user_input == "define":
-            if not key_list:
-                print("This list is empty." '\n' '\n')
-            else:
-                define_key = key_list
-                define_ask = input(f"Pick a key{define_key}" '\n')
-                #call a function? from here? to use LLM to define the picked key?
-            continue
+        #if user_input == "define":
+            #if not key_list:
+             #   print("This list is empty." '\n' '\n')
+            #else:
+            #    define_key = key_list
+            #    define_ask = input(f"Pick a key{define_key}" '\n')
+            #    #call a function? from here? to use LLM to define the picked key?
+            #continue
 
         if user_input != ['reset', 'exit', 'yes', 'define']:
             print("Not an option" '\n' '\n')
@@ -103,9 +105,6 @@ def main():
         break  # Exit the loop and end the program
         
         # Proceed if not reset or exit
-        #user_input2 = input("What are you looking for?\n")
-        #user_prompt = "return list in JSON"
-
 
 
 
@@ -126,13 +125,3 @@ if __name__ == "__main__":
 #I want to now define values based off the AI call and then create a 
 # main() loop to do stuff, not sure what yet.... but atleast i have valuves in a list
 #maybe create another API call from each item in the list and create a dictionary
-
-
-#maybe ?select a key from dictonary and then display the defintions this is broken still
-#selected_key = input(f"Select and item and display defintion: '\n' {key_list}" '\n')
-
-#print_def = key_list[0].get(selected_key)
-#print_key = key_list[selected_key] 
-#not sure how to call the list items yet, this only chooses positon one
-#print(f'{print_def}')
-
