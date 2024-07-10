@@ -80,8 +80,11 @@ def detailedOpenAIcall(prompt, file_content):
 
 def main():
     while True:
-        user_input = input("Options at this prompt:" '\n' "'reset' to" '\n' "'exit' to quit" '\n' "'yes' to continue" '\n'
-          "'detailed' to get detailed itemization on each object in a file" '\n').strip().lower()
+        user_input = input("Options at this prompt:" '\n' 
+                           "'yes' to continue" '\n' 
+                           "'detailed' to get detailed itemization on each object in a file" '\n' '\n' 
+                           "'reset' to clear file and reset program" '\n' 
+                           "'exit' to quit" '\n').strip().lower()
 
         if user_input == "yes":
             user_input2 = input("What are you looking for?\n")
