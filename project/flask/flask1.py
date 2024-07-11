@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 from openai import OpenAI
-
+from pprint import pprint
 
 from dotenv import load_dotenv
 import os
@@ -52,7 +52,7 @@ def my_form_post():
             for item in key_list:
                 f.write(f"{item}\n")
 
-        return jsonify({"message": message})
+        return jsonify(pprint({message}))
     except Exception as e:
         return jsonify({"error": str(e)})
 
